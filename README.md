@@ -6,10 +6,10 @@ Sample Chart
 
 + helm repo list
 NAME                            URL                                       
-samplechart2                    https://ansvu.github.io/samplechart2   
+samplechart                    https://ansvu.github.io/samplechart
 
-+ helm install samplechart2 -n ava samplechart2/samplechart
-NAME: samplechart2
++ helm install samplechart -n ava samplechart/samplechart
+NAME: samplechart
 LAST DEPLOYED: Tue Dec  7 22:43:57 2021
 NAMESPACE: ava
 STATUS: deployed
@@ -19,7 +19,7 @@ NOTES:
 
 + ka get po
 NAME                            READY   STATUS    RESTARTS   AGE
-samplechart2-76fc59d6f6-xspqg   1/1     Running   0          52s
+samplechart-76fc59d6f6-xspqg   1/1     Running   0          52s
 ```
 - index.yaml
 ```yaml
@@ -40,7 +40,7 @@ entries:
     kubeVersion: '>=1.20.0'
     name: samplechart
     urls:
-    - https://github.com/ansvu/samplechart2/releases/download/samplechart-0.1.2/samplechart-0.1.2.tgz
-    version: 0.1.2
+    - https://github.com/ansvu/samplechart/releases/download/samplechart-0.1.1/samplechart-0.1.1.tgz
+    version: 0.1.1
 generated: "2021-12-07T16:02:33.591365234-06:00"
 ```
